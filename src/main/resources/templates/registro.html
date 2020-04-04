@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<title>Suministros Medicos</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="../static/css/bootstrap.css" rel="stylesheet"
+	th:href="@{/css/bootstrap.css}" />
+</head>
+<body>
+	<div>
+		<div class="row">
+			<div class="col-lg-4"></div>
+			<div class="col-lg-4">
+				<h1>MEDICINE FOR ALL</h1>
+				<h4>Registro de suministros</h4>
+				<form action="#" th:action="@{/registro}" th:object="${suministro}"
+					method="post">
+					<div class="form-group">
+						<label for="inputNombre" class="control-label">Nombre
+							del producto</label>
+						<input type="text" class="form-control" id="inputNombre"
+							th:field="*{nombre}">
+					</div>
+					<div class="form-group">
+					   <label for="inputCalidad">Grado de calidad</label>
+					   <select id="inputCalidad" class="form-control" th:field="*{gradocalidad}">
+					      <option value="" selected="selected">N/A</option>
+					      <option th:each="calidadOpt : ${calidadList.entrySet()}" 
+					         th:value="${calidadOpt.key}" 
+					         th:text="${calidadOpt.value}"></option>
+					   </select>     
+					</div>    
+					<div class="form-group">
+						<label for="inputCantidad" class="control-label">Cantidad
+							total</label>
+						<input type="number" class="form-control" id="inputCantidad"
+							th:field="*{cantidad}">
+					</div>
+					<div class="form-group">
+					   <label for="inputBodega">Bodega</label>
+					   <select id="inputBodega" class="form-control" th:field="*{bodega}">
+					      <option value="" selected="selected">N/A</option>
+					      <option th:each="bodegaOpt : ${bodegaListado}" 
+					         th:value="${bodegaOpt.nombre}" 
+					         th:text="${bodegaOpt.nombre}"></option>
+					   </select>     
+					</div>
+					<div class="form-group">
+						<label for="inputCantidadCajas" class="control-label">Cantidad de cajas
+							total</label>
+						<input type="number" class="form-control" id="inputCantidadCajas"
+							th:field="*{cantidad}">
+					</div>
+					<div class="form-group">
+						<label for="inputFecha" class="control-label">Fecha
+							de ingreso</label>
+						<input type="text" class="form-control" id="inputFecha"
+							th:field="*{created}">
+					</div>
+ 
+					<div class="form-group">
+							<button type="reset" class="btn btn-default">Cancelar</button>
+							<button type="submit" class="btn btn-primary">Guardar</button>
+					</div>
+				</form>
+				<a class="btn btn-link" href="/..">Volver a inicio</a>
+			</div>
+			<div class="col-lg-2"></div>
+		</div>
+	</div>
+</body>
+</html>
