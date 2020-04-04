@@ -15,13 +15,13 @@ Esta es una aplicación simple de Spring Boot usando:
 - Expone un API Restful en el endpoint ```localhost:8080/suministros```
 - Registra productos simples
 - Lista los productos usando 2 alternativas: 
-    ...- Renderizado de datatables aprovechando la respuesta del APIRestful
-    ...- Páginas creadas desde el servidor usando Thymeleaf como templates.
+    ..* Renderizado de datatables aprovechando la respuesta del APIRestful
+    ..* Páginas creadas desde el servidor usando Thymeleaf como templates.
 
 
 ## Notas
 
-1. Para poder correr la aplicación primeramente debe crear la BD en MariaDB. Para esto en el ROOT del repositorio se encontrará un archivo DB.sql el cual puede usar como base.
+1. Para poder correr la aplicación primeramente debe crear la BD en MariaDB. Para esto en el ROOT del repositorio se encontrará un archivo ```DB.sql``` el cual puede usar como base.
 Es importante:
 - Respetar los nombres de las tablas.
 - Los nombres de los campos de cada una de las tablas.
