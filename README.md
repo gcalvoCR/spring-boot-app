@@ -25,6 +25,6 @@ Es importante:
 
 ___
 
-Realizado por: Gabriel Calvo Vargas
+### Realizado por: Gabriel Calvo Vargas
 
-Contanteme [aquí])(https://www.linkedin.com/in/gabriel-calvo-vargas-932b3357/) 
+¿Querés conversar? Contanteme [aquí](https://www.linkedin.com/in/gabriel-calvo-vargas-932b3357/). 
