@@ -1,14 +1,22 @@
-Esta esta es una aplicación  simple usando Spring Boot usando:
+Esta es una aplicación simple de Spring Boot usando:
 
 - JPA
 - Thymeleaf
-- MariaDB como BD
 - Spring Boot Web
+- MariaDB (como BD)
 
 ## Requisitos
 
-- Tener MariaDB instalado. [Clique aqui para descargar](https://downloads.mariadb.org/)
-- STS. [Clique aqui para descargar](https://spring.io/tools)
+- Tener MariaDB instalado. [Cliquee aquí para descargar](https://downloads.mariadb.org/)
+- STS. [Cliquee aquí para descargar](https://spring.io/tools)
+
+## Funcionalidad
+
+- Expone un API Restful en el endpoint ```localhost:8080/suministros```
+- Registra productos simples
+- Lista los productos usando 2 alternativas: 
+    ...- Renderizado de datatables aprovechando la respuesta del APIRestful
+    ...- Páginas creadas desde el servidor usando Thymeleaf como templates.
 
 
 ## Notas
@@ -19,7 +27,8 @@ Es importante:
 - Los nombres de los campos de cada una de las tablas.
 
 
-2. Se debe modificar la ruta a la BD según sea su caso. Dicha configuración se puede observar en el directorio ```spring-boot-app/src/main/resources/application.properties```
+2. Se debe modificar la ruta a la BD según sea su caso. Dicha configuración se puede observar en el directorio
+ ```spring-boot-app/src/main/resources/application.properties```
 
 
 
@@ -27,4 +36,4 @@ ___
 
 ### Realizado por: Gabriel Calvo Vargas
 
-¿Querés conversar? Contanteme [aquí](https://www.linkedin.com/in/gabriel-calvo-vargas-932b3357/). 
+¿Quiere conversar? Contacteme [aquí](https://www.linkedin.com/in/gabriel-calvo-vargas-932b3357/). 
